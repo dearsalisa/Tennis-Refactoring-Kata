@@ -34,16 +34,14 @@ public class TennisGame2 implements TennisGame {
         if (Math.abs(P1point - P2point) == 1) {
             if (P1point > P2point) {
                 return String.format("Advantage %s", player1Name);
-            }
-            if (P2point > P1point) {
+            } else {
                 return String.format("Advantage %s", player2Name);
             }
         }
         if (Math.abs(P1point - P2point) >= 2) {
             if (P1point > P2point) {
                 return String.format("Win for %s", player1Name);
-            }
-            if (P2point > P1point) {
+            } else {
                 return String.format("Win for %s", player2Name);
             }
         }
